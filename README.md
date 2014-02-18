@@ -14,7 +14,7 @@ Add this line to your application's Gemfile:
 
     gem 'serveall'
 
-    create a file that requires the gem and then run `ruby example.rb port dir`
+    create an example.rb file that requires the gem and then run `ruby example.rb port dir`
 
 And then execute:
 
@@ -24,9 +24,7 @@ Or install it yourself as:
 
     `$ gem install serveall`
 
-## Usage
 
-TODO: Write usage instructions here
 
 ## Contributing
 
