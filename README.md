@@ -1,6 +1,12 @@
 # Serveall
 
-TODO: Write a gem description
+## Author
+
+Liam Buell www.liambuell.com
+
+## Description
+
+A lightweight ruby http server that will serve assets in a desired directory/port combination
 
 ## Installation
 
@@ -8,13 +14,15 @@ Add this line to your application's Gemfile:
 
     gem 'serveall'
 
+    create a file that requires the gem and then run `ruby example.rb port dir`
+
 And then execute:
 
-    $ bundle
+    `$ bundle`
 
 Or install it yourself as:
 
-    $ gem install serveall
+    `$ gem install serveall`
 
 ## Usage
 
@@ -27,3 +35,8 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+MIT
+

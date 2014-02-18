@@ -14,7 +14,7 @@ ARGV.each do |a|
 
 end
 # Files will be served from this directory
-WEB_ROOT = './public'
+WEB_ROOT = './public' unless defined?(WEB_ROOT)
 
 SERVER_PORT = 1337 unless defined?(SERVER_PORT)
 # Map extensions to their content type
