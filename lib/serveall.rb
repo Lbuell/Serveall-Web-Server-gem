@@ -14,7 +14,7 @@ ARGV.each do |a|
 
 end
 # Files will be served from this directory
-WEB_ROOT = './public' unless defined?(WEB_ROOT)
+WEB_ROOT = "./public" unless defined?(WEB_ROOT)
 
 SERVER_PORT = 1337 unless defined?(SERVER_PORT)
 # Map extensions to their content type
@@ -82,6 +82,15 @@ loop do
 
         # write the contents of the file to the socket
         IO.copy_stream(file, socket)
+      end
+    elsif
+      File.open("./") do |file|
+      socket.print "HTTP/1.1 200 OK\r\n" +
+                    "Content-Type: text/html\r\n" +
+                    "Content-Length: #{file.size}\r\n" +
+                    "Connection: close\r\n"
+      socket.print "\r\n"
+        # write the contents of the file to the socket
       end
     else
       message = "File not found\n"

@@ -6,6 +6,7 @@ require 'serveall/version'
 Gem::Specification.new do |spec|
   spec.name          = "serveall"
   spec.version       = Serveall::VERSION
+  spec.executables << "serveall"
   spec.authors       = ["lbuell"]
   spec.email         = ["liamcbuell@gmail.com"]
   spec.description   = %q{A Simple ruby web server}
