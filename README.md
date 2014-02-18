@@ -7,6 +7,7 @@ Liam Buell www.liambuell.com
 ## Description
 
 A lightweight ruby http server that will serve assets in a desired directory/port combination
+it will serve from public on port 1337 by default, and if there is no public folder and you don't specify a folder, it will default to a basic index.html
 
 ## Installation
 
@@ -14,11 +15,11 @@ Add this line to your application's Gemfile:
 
     gem 'serveall'
 
-    create an example.rb file that requires the gem and then run `ruby example.rb port dir`
-
+    
 And then execute:
 
     `$ bundle`
+    and to boot it up just type serveall in your prompt
 
 Or install it yourself as:
 
